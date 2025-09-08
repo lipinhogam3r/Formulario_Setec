@@ -1,0 +1,9 @@
+:root{
+
+}
+
+.main{
+    display: flex;
+    border-top: 20px;
+    border-left: 40px;
+}
