@@ -4,6 +4,6 @@
 
 .main{
     display: flex;
-    border-top: 20px;
-    border-left: 40px;
+    justify-content: center;
+    padding: 30px;
 }
