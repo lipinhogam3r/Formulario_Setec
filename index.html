@@ -19,7 +19,7 @@
 <!-- Main -->
 <main>
     
-<form method="POST" action="https://script.google.com/macros/s/AKfycbxvccBUjOmEhK2ZGlZwtlY94F1W-ZbqbhGHjiI6Bk75xusiRq2vYKxfVLILnX_OR8Ne/exec">
+<form id="pagamentoForm" method="POST" action="https://script.google.com/macros/s/AKfycbxvccBUjOmEhK2ZGlZwtlY94F1W-ZbqbhGHjiI6Bk75xusiRq2vYKxfVLILnX_OR8Ne/exec">
     
     <div class="form-C">
          <label>Nome:</label>
@@ -68,7 +68,7 @@
         </select>
       </div>
       <div class="buttons">
-        <button type="submit">Realizar Pagamento</button>
+        <button id="btnPagamento" type="button">Realizar Pagamento</button>
         <button type="reset">Cancelar</button>
         </form>
 
@@ -79,7 +79,7 @@
       <img src="chave-pix.png" alt="Chave PIX" class="pix-image" />
       <p id="popupDesc" class="pix-text">Escaneie o QR Code acima para realizar o pagamento via PIX.</p>
       <div class="popup-buttons">
-        <button type="button" class="btn-confirm" id="confirmBtn">Confirmar Pagamento</button>
+        <button type="button" class="btn-confirm" id="confirmBtn" type="submit">Confirmar Pagamento</button>
         <button type="button" class="btn-cancel" id="cancelBtn">Cancelar</button>
       </div>
     </div>
