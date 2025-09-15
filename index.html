@@ -72,11 +72,16 @@
         <button type="reset">Cancelar</button>
         </form>
 
-    <div id="popup" class="popup-container">
+   <!-- POPUP -->
+  <div id="popup" class="popup-container" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-describedby="popupDesc">
     <div class="popup-content">
-      <span class="close-btn">&times;</span>
-      <img src="chave-pix.png" alt="Chave PIX" class="pix-image">
-      <p class="pix-text">Escaneie o QR Code acima para realizar o pagamento via PIX.</p>
+      <h2 id="popupTitle">Confirme seu Pagamento</h2>
+      <img src="chave-pix.png" alt="Chave PIX" class="pix-image" />
+      <p id="popupDesc" class="pix-text">Escaneie o QR Code acima para realizar o pagamento via PIX.</p>
+      <div class="popup-buttons">
+        <button type="button" class="btn-confirm" id="confirmBtn">Confirmar Pagamento</button>
+        <button type="button" class="btn-cancel" id="cancelBtn">Cancelar</button>
+      </div>
     </div>
   </div>
 
