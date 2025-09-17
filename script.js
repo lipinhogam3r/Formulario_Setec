@@ -45,10 +45,21 @@ function mascara(i){
 
 function mascaraRG(input) {
     const valor = input.value.replace(/\D/g, '');  // Remove caracteres não numéricos
-    input.value = valor.replace(/(\d{2})(\d)/, '$1.$2')  // Adiciona o primeiro ponto
-                       .replace(/(\d{5})(\d)/, '$1.$2')  // Adiciona o segundo ponto
-                       .replace(/(\d{8})(\d)/, '$1-$2'); // Adiciona o hífen
+
+    // Aplicar a máscara de forma progressiva
+    if (valor.length <= 2) {
+        input.value = valor.replace(/(\d{2})(\d*)/, '$1');
+    } else if (valor.length <= 5) {
+        input.value = valor.replace(/(\d{2})(\d{1,3})(\d*)/, '$1.$2');
+    } else if (valor.length <= 8) {
+        input.value = valor.replace(/(\d{2})(\d{1,3})(\d{1,3})(\d*)/, '$1.$2.$3');
+    } else if (valor.length <= 10) {
+        input.value = valor.replace(/(\d{2})(\d{1,3})(\d{1,3})(\d{1,2})(\d*)/, '$1.$2.$3-$4');
+    } else {
+        input.value = valor.replace(/(\d{2})(\d{1,3})(\d{1,3})(\d{1,2})(\d*)/, '$1.$2.$3-$4');
+    }
 }
+
 
 
 
