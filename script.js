@@ -25,17 +25,13 @@ const btnPagamento = document.getElementById('btnPagamento');
     });
 
 
- function cpf(v) {
-            // Remove everything that is not a number
-            v = v.replace(/\D/g, "");
 
-            // Add dots and hyphen as the user types
-            v = v.replace(/(\d{3})(\d)/, "$1.$2");           // First dot
-            v = v.replace(/(\d{3})(\d)/, "$1.$2");           // Second dot
-            v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");     // Hyphen
+var cpf = document.querySelector("#cpf");
 
-            return v;
-        }
+cpf.addEventListener("blur", function(){
+   if(cpf.value) cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
+});
     return v
 }
+
 
