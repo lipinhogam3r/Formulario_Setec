@@ -43,3 +43,13 @@ function mascara(i){
 
 
 
+function mascaraRG(input) {
+    const valor = input.value.replace(/\D/g, '');  // Remove caracteres não numéricos
+    input.value = valor.replace(/(\d{2})(\d)/, '$1.$2')  // Adiciona o primeiro ponto
+                       .replace(/(\d{5})(\d)/, '$1.$2')  // Adiciona o segundo ponto
+                       .replace(/(\d{8})(\d)/, '$1-$2'); // Adiciona o hífen
+}
+
+
+
+
