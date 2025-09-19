@@ -79,3 +79,8 @@ const phoneMask = (value) => {
 
 
 
+function desativarBotao() {
+    const botao = document.getElementById('meuBotao');
+    botao.disabled = true;  // Desativa o botão
+    // Aqui você pode colocar a lógica de envio dos dados, por exemplo, uma requisição AJAX
+  }
