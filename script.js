@@ -75,3 +75,18 @@ function desativarBotao() {
   }
 
 
+
+
+
+function toggleFields() {
+        var tipo = document.querySelector('input[name="tipo"]:checked').value;
+        var alunoFields = document.getElementById('alunoFields');
+        
+        if (tipo === 'aluno') {
+            alunoFields.style.display = 'block';  // Mostrar campos
+        } else {
+            alunoFields.style.display = 'none';  // Ocultar campos
+        }
+    }
+
+
