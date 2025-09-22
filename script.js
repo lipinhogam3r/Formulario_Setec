@@ -44,8 +44,10 @@ function mascara(i){
 
 
 function mascaraRG(input) {
-    const valor = input.value.replace(/\D/g, '');  // Remove caracteres não numéricos
+    // Remover apenas caracteres alfabéticos (A-Z, a-z)
+    input.value = input.value.replace(/[A-Za-z]/g, '');  
 }
+
 
 
 
@@ -71,4 +73,5 @@ function desativarBotao() {
     botao.disabled = true;  // Desativa o botão
     // Aqui você pode colocar a lógica de envio dos dados, por exemplo, uma requisição AJAX
   }
+
 
