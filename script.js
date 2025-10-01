@@ -335,6 +335,7 @@ function initializeCitySchoolSelection() {
       { value: "Barão do Cerro Azul", text: "C. E. Barão do Cerro Azul" },
       { value: "Idalia Rocha", text: "C. E. Idalia Rocha" },
       { value: "Jose de Mattos", text: "E. E. C. José de Mattos Leão" },
+      { value: "Mater", text: "C. E. Mater" },
       { value: "Nilo Pecanha", text: "C. E. Nilo Peçanha" },
       { value: "Santa Barbara", text: "E. E. C. Santa Bárbara" },
     ],
@@ -598,4 +599,5 @@ document.addEventListener("keydown", (e) => {
 })
 
 console.log("🚀 SETEC 2025 - Formulário carregado com sucesso!")
+
 
