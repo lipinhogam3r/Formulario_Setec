@@ -345,6 +345,9 @@ function initializeCitySchoolSelection() {
       { value: "Cristovao Colombo", text: "C. E. Cristóvão Colombo" },
       { value: "Jose Marti", text: "C. E. José Martí" },
     ],
+    "Visitante não vinculado": [
+      { value: "Visitante não vinculado", text: "Visitante não vinculado" }
+    ],
     Lidianopolis: [
       { value: "Pedro I", text: "C. E. Pedro I" },
       { value: "Benedito Serra", text: "E. E. C. Benedito Serra" },
@@ -595,3 +598,4 @@ document.addEventListener("keydown", (e) => {
 })
 
 console.log("🚀 SETEC 2025 - Formulário carregado com sucesso!")
+
