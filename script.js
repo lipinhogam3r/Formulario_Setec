@@ -13,7 +13,7 @@ function initMatrixAnimation() {
 
   // Matrix characters (including some programming symbols)
   const chars =
-    "SETEC2025"
+    "SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025SETEC2025"
   const charArray = chars.split("")
 
   const fontSize = 14
@@ -599,5 +599,6 @@ document.addEventListener("keydown", (e) => {
 })
 
 console.log("🚀 SETEC 2025 - Formulário carregado com sucesso!")
+
 
 
