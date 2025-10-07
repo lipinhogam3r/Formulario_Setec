@@ -600,5 +600,19 @@ document.addEventListener("keydown", (e) => {
 
 console.log("🚀 SETEC 2025 - Formulário carregado com sucesso!")
 
+ function copiarTexto() {
+      var textoInput = document.getElementById("textoParaCopiar");
+      
+      // Seleciona o texto no campo de entrada
+      textoInput.select();
+      
+      // Copia o texto para a área de transferência usando a nova API
+      navigator.clipboard.writeText(textoInput.value).then(function() {
+        alert("Texto copiado!"); // Mensagem de sucesso
+      }).catch(function(err) {
+        console.error('Falha ao copiar texto: ', err); // Erro ao copiar
+      });
+    }
+
 
 
