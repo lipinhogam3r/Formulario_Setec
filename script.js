@@ -614,5 +614,8 @@ console.log("🚀 SETEC 2025 - Formulário carregado com sucesso!")
       });
     }
 
+function removerPontos(input) {
+  input.value = input.value.replace(/\./g, '');
+}
 
 
